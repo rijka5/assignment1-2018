@@ -1,24 +1,40 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+ array[0] = array.pop + array[0];
+  sum(array) until array.length == 1
+  array.first
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+ case a.length
+    when 0
+      return 0
+    when 1
+      return a.first
+    else
+      return (a.sort!.pop)+(a.sort!.pop)
 end
 
 
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+ 	def hello(name)
+	return "Hello, #{name}"
+
 end
 
 
 # Part 3
 
 class BookInStock
-  # YOUR CODE HERE
+ attr_accessor :isbn, :price
+	
+  def initialize(isbn, price)	
+    raise ArgumentError if isbn.empty? || price <= 0	
+    @isbn = isbn	
+    @price = price
+  	
 end
 
